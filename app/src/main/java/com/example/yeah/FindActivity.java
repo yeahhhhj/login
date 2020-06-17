@@ -27,8 +27,6 @@ public class FindActivity extends AppCompatActivity implements View.OnClickListe
     //define firebase object
     private FirebaseAuth firebaseAuth;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +36,6 @@ public class FindActivity extends AppCompatActivity implements View.OnClickListe
         buttonFind = (Button) findViewById(R.id.buttonFind);
         progressDialog = new ProgressDialog(this);
         firebaseAuth = FirebaseAuth.getInstance();
-
         buttonFind.setOnClickListener(this);
 
     }
