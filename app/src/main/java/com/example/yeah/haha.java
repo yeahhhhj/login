@@ -36,13 +36,87 @@ public class haha extends AppCompatActivity {
 
         ImageView image = (ImageView)findViewById(R.id.imageView2);
 
-        String Name = intent.getExtras().getString("Name");
+        String Name = intent.getStringExtra("Name");
         switch (Name) {
             case "animal":
                 image.setImageResource(R.drawable.elephant);
                 break;
+            case "animal2":
+                image.setImageResource(R.drawable.cat);
+                break;
+            case "animal3":
+                image.setImageResource(R.drawable.whale);
+                break;
+            case "animal4":
+                image.setImageResource(R.drawable.sheep);
+                break;
+            case "animal5":
+                image.setImageResource(R.drawable.octopus);
+                break;
+            case "animal6":
+                image.setImageResource(R.drawable.flamingo);
+                break;
+            case "animal7":
+                image.setImageResource(R.drawable.giraffe);
+                break;
+            case "animal8":
+                image.setImageResource(R.drawable.squirrel);
+                break;
+            case "animal9":
+                image.setImageResource(R.drawable.hen);
+                break;
+            case "plant":
+                image.setImageResource(R.drawable.flower);
+                break;
+            case "plant2":
+                image.setImageResource(R.drawable.bush);
+                break;
+            case "plant3":
+                image.setImageResource(R.drawable.flower1);
+                break;
+            case "plant4":
+                image.setImageResource(R.drawable.flower2);
+                break;
+            case "plant5":
+                image.setImageResource(R.drawable.flower3);
+                break;
+            case "plant6":
+                image.setImageResource(R.drawable.forest);
+                break;
+            case "plant7":
+                image.setImageResource(R.drawable.flower4);
+                break;
+            case "plant8":
+                image.setImageResource(R.drawable.tree);
+                break;
+            case "plant9":
+                image.setImageResource(R.drawable.forest1);
+                break;
+            case "extra":
+                image.setImageResource(R.drawable.architecture);
+                break;
+            case "extra2":
+                image.setImageResource(R.drawable.camping);
+                break;
+            case "extra3":
+                image.setImageResource(R.drawable.landscape);
+                break;
+            case "extra4":
+                image.setImageResource(R.drawable.fountain);
+                break;
+            case "extra5":
+                image.setImageResource(R.drawable.mushroom);
+                break;
+            case "extra6":
+                image.setImageResource(R.drawable.property);
+                break;
+            case "extra7":
+                image.setImageResource(R.drawable.fence);
+                break;
+            case "extra8":
+                image.setImageResource(R.drawable.house);
+                break;
         }
-
         h = intent.getExtras().getInt("hour");
         m = intent.getExtras().getInt("minute");
         s = intent.getExtras().getInt("second");

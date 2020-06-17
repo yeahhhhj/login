@@ -1,5 +1,6 @@
 package com.example.yeah;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -17,7 +18,7 @@ public class failed extends AppCompatActivity {
 //뒤로가기 금지
     }
     public void back_home(View view) {
-        Toast.makeText(getApplicationContext(),"홈으로 가게해줘억!", Toast.LENGTH_LONG).show();//임시
+        startActivity(new Intent(this, MainActivity.class));
     }
 }
 

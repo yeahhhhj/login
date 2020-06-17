@@ -11,54 +11,52 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
+
 import com.example.yeah.R;
 import com.example.yeah.haha;
 
-public class GalleryFragment extends Fragment implements View.OnClickListener {
-   // FragmentManager fragmentManager = getFragmentManager();
-   // FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+public class Second extends Fragment implements View.OnClickListener {
 
-    public static GalleryFragment newInstance() {
-        return new GalleryFragment();
+    public static Second newInstance() {
+        return new Second();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        return inflater.inflate(R.layout.fragment_gallery, container, false);
-
+        return inflater.inflate(R.layout.fragment_second, container, false);
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
 
-        super.onActivityCreated(savedInstanceState);
-        ImageView animal = (ImageView) getActivity().findViewById(R.id.animal);
-        ImageView animal2 = (ImageView) getActivity().findViewById(R.id.animal2);
-        ImageView animal3 = (ImageView) getActivity().findViewById(R.id.animal3);
-        ImageView animal4 = (ImageView) getActivity().findViewById(R.id.animal4);
-        ImageView animal5 = (ImageView) getActivity().findViewById(R.id.animal5);
-        ImageView animal6 = (ImageView) getActivity().findViewById(R.id.animal6);
-        ImageView animal7 = (ImageView) getActivity().findViewById(R.id.animal7);
-        ImageView animal8 = (ImageView) getActivity().findViewById(R.id.animal8);
-        ImageView animal9 = (ImageView) getActivity().findViewById(R.id.animal9);
 
-        animal.setOnClickListener((View.OnClickListener) this);
-        animal2.setOnClickListener((View.OnClickListener) this);
-        animal3.setOnClickListener((View.OnClickListener) this);
-        animal4.setOnClickListener((View.OnClickListener) this);
-        animal5.setOnClickListener((View.OnClickListener) this);
-        animal6.setOnClickListener((View.OnClickListener) this);
-        animal7.setOnClickListener((View.OnClickListener) this);
-        animal8.setOnClickListener((View.OnClickListener) this);
-        animal9.setOnClickListener((View.OnClickListener) this);
+        super.onActivityCreated(savedInstanceState);
+        ImageView plant = (ImageView) getActivity().findViewById(R.id.plant);
+        ImageView plant2 = (ImageView) getActivity().findViewById(R.id.plant2);
+        ImageView plant3 = (ImageView) getActivity().findViewById(R.id.plant3);
+        ImageView plant4 = (ImageView) getActivity().findViewById(R.id.plant4);
+        ImageView plant5 = (ImageView) getActivity().findViewById(R.id.plant5);
+        ImageView plant6 = (ImageView) getActivity().findViewById(R.id.plant6);
+        ImageView plant7 = (ImageView) getActivity().findViewById(R.id.plant7);
+        ImageView plant8 = (ImageView) getActivity().findViewById(R.id.plant8);
+        ImageView plant9 = (ImageView) getActivity().findViewById(R.id.plant9);
+
+        plant.setOnClickListener((View.OnClickListener) this);
+        plant2.setOnClickListener((View.OnClickListener) this);
+        plant3.setOnClickListener((View.OnClickListener) this);
+        plant4.setOnClickListener((View.OnClickListener) this);
+        plant5.setOnClickListener((View.OnClickListener) this);
+        plant6.setOnClickListener((View.OnClickListener) this);
+        plant7.setOnClickListener((View.OnClickListener) this);
+        plant8.setOnClickListener((View.OnClickListener) this);
+        plant9.setOnClickListener((View.OnClickListener) this);
     }
 
     public void onClick(View v) {
 
         switch (v.getId()){
 
-            case R.id.animal:
+            case R.id.plant:
                 final EditText etEdit = new EditText(getActivity());
                 AlertDialog.Builder dialog = new AlertDialog.Builder(getActivity());
                 dialog.setTitle("입력");
@@ -72,8 +70,8 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                         intent.putExtra("String",inputValue);
                         intent.putExtra("Name","animal");
                         int hour = 0;
-                        int minute = 0;
-                        int second = 3;
+                        int minute = 30;
+                        int second = 0;
                         intent.putExtra("hour",hour);
                         intent.putExtra("minute",minute);
                         intent.putExtra("second",second);
@@ -89,7 +87,7 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                 dialog.show();
                 break;
 
-            case R.id.animal2:
+            case R.id.plant2:
 
                 final EditText etEdit2 = new EditText(getActivity());
                 AlertDialog.Builder dialog2 = new AlertDialog.Builder(getActivity());
@@ -103,8 +101,8 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                         String inputValue = etEdit2.getText().toString();
                         intent4.putExtra("String",inputValue);
                         intent4.putExtra("Name","animal2");
-                        int hour = 0;
-                        int minute = 45;
+                        int hour = 1;
+                        int minute = 0;
                         int second = 0;
                         intent4.putExtra("hour",hour);
                         intent4.putExtra("minute",minute);
@@ -121,7 +119,7 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                 dialog2.show();
                 break;
 
-            case R.id.animal3:
+            case R.id.plant3:
 
                 final EditText etEdit3 = new EditText(getActivity());
                 AlertDialog.Builder dialog3 = new AlertDialog.Builder(getActivity());
@@ -135,8 +133,8 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                         String inputValue = etEdit3.getText().toString();
                         intent4.putExtra("String",inputValue);
                         intent4.putExtra("Name","animal3");
-                        int hour = 0;
-                        int minute = 30;
+                        int hour = 1;
+                        int minute = 0;
                         int second = 0;
                         intent4.putExtra("hour",hour);
                         intent4.putExtra("minute",minute);
@@ -152,7 +150,7 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                 });
                 dialog3.show();
                 break;
-            case R.id.animal4:
+            case R.id.plant4:
 
                 final EditText etEdit4 = new EditText(getActivity());
                 AlertDialog.Builder dialog4 = new AlertDialog.Builder(getActivity());
@@ -167,7 +165,7 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                         intent4.putExtra("String",inputValue);
                         intent4.putExtra("Name","animal4");
                         int hour = 0;
-                        int minute = 50;
+                        int minute = 40;
                         int second = 0;
                         intent4.putExtra("hour",hour);
                         intent4.putExtra("minute",minute);
@@ -183,7 +181,7 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                 });
                 dialog4.show();
                 break;
-            case R.id.animal5:
+            case R.id.plant5:
                 final EditText etEdit5 = new EditText(getActivity());
                 AlertDialog.Builder dialog5 = new AlertDialog.Builder(getActivity());
                 dialog5.setTitle("입력");
@@ -197,7 +195,7 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                         intent4.putExtra("String",inputValue);
                         intent4.putExtra("Name","animal5");
                         int hour = 0;
-                        int minute = 45;
+                        int minute = 30;
                         int second = 0;
                         intent4.putExtra("hour",hour);
                         intent4.putExtra("minute",minute);
@@ -213,7 +211,7 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                 });
                 dialog5.show();
                 break;
-            case R.id.animal6:
+            case R.id.plant6:
                 final EditText etEdit6 = new EditText(getActivity());
                 AlertDialog.Builder dialog6 = new AlertDialog.Builder(getActivity());
                 dialog6.setTitle("입력");
@@ -227,7 +225,7 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                         intent4.putExtra("String",inputValue);
                         intent4.putExtra("Name","animal6");
                         int hour = 1;
-                        int minute = 0;
+                        int minute = 10;
                         int second = 0;
                         intent4.putExtra("hour",hour);
                         intent4.putExtra("minute",minute);
@@ -243,7 +241,7 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                 });
                 dialog6.show();
                 break;
-            case R.id.animal7:
+            case R.id.plant7:
                 final EditText etEdit7 = new EditText(getActivity());
                 AlertDialog.Builder dialog7 = new AlertDialog.Builder(getActivity());
                 dialog7.setTitle("입력");
@@ -257,7 +255,7 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                         intent4.putExtra("String",inputValue);
                         intent4.putExtra("Name","animal7");
                         int hour = 0;
-                        int minute = 55;
+                        int minute = 35;
                         int second = 0;
                         intent4.putExtra("hour",hour);
                         intent4.putExtra("minute",minute);
@@ -273,7 +271,7 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                 });
                 dialog7.show();
                 break;
-            case R.id.animal8:
+            case R.id.plant8:
                 final EditText etEdit8 = new EditText(getActivity());
                 AlertDialog.Builder dialog8 = new AlertDialog.Builder(getActivity());
                 dialog8.setTitle("입력");
@@ -303,7 +301,7 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                 });
                 dialog8.show();
                 break;
-            case R.id.animal9:
+            case R.id.plant9:
 
                 final EditText etEdit9 = new EditText(getActivity());
                 AlertDialog.Builder dialog9 = new AlertDialog.Builder(getActivity());
@@ -317,7 +315,7 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                         String inputValue = etEdit9.getText().toString();
                         intent4.putExtra("String",inputValue);
                         intent4.putExtra("Name","animal8");
-                        int hour = 0;
+                        int hour = 1;
                         int minute = 20;
                         int second = 0;
                         intent4.putExtra("hour",hour);
@@ -336,20 +334,15 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
                 break;
 
             case R.id.tab_first:
-               출처: https://mc10sw.tistory.com/16 [Make it possible]
-                //GalleryFragment fragment = new GalleryFragment();
-                //fragmentTransaction.replace(R.id.nav_host_fragment, fragment);
-                //fragmentTransaction.commit();
-              break;
+                Fragment fragment = new GalleryFragment();
+                break;
             //임시
             case R.id.tab_second:
-                  newInstance();
-                 break;
+                Fragment fragment2 = new Second();
+                break;
 
             case R.id.tab_third:
-                //Third fragment3 = new Third();
-                //fragmentTransaction.replace(R.id.nav_host_fragment, fragment3);
-                //fragmentTransaction.commit();
+                Fragment fragment3 = new Third();
                 break;
 
         }

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.gallery.GalleryFragment">
+    android:background="@drawable/back"
+   >
+
+
+
     <LinearLayout
         android:id="@+id/ll"
         android:layout_width="match_parent"
@@ -42,7 +45,7 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/animal"
+        android:id="@+id/plant"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
@@ -51,10 +54,10 @@
         android:layout_marginStart="160dp"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="100dp"
-        android:src="@drawable/elephant" />
+        android:src="@drawable/flower" />
 
     <ImageView
-        android:id="@+id/animal2"
+        android:id="@+id/plant2"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
@@ -63,10 +66,10 @@
         android:layout_marginStart="30dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="100dp"
-        android:src="@drawable/cat" />
+        android:src="@drawable/bush" />
 
     <ImageView
-        android:id="@+id/animal3"
+        android:id="@+id/plant3"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
@@ -75,10 +78,10 @@
         android:layout_marginStart="290dp"
         android:layout_marginLeft="277dp"
         android:layout_marginTop="100dp"
-        android:src="@drawable/whale" />
+        android:src="@drawable/flower1" />
 
     <ImageView
-        android:id="@+id/animal4"
+        android:id="@+id/plant4"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
@@ -87,10 +90,10 @@
         android:layout_marginStart="30dp"
         android:layout_marginLeft="7dp"
         android:layout_marginTop="280dp"
-        android:src="@drawable/sheep" />
+        android:src="@drawable/flower2" />
 
     <ImageView
-        android:id="@+id/animal5"
+        android:id="@+id/plant5"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
@@ -99,10 +102,10 @@
         android:layout_marginStart="160dp"
         android:layout_marginLeft="156dp"
         android:layout_marginTop="280dp"
-        android:src="@drawable/octopus" />
+        android:src="@drawable/flower3" />
 
     <ImageView
-        android:id="@+id/animal6"
+        android:id="@+id/plant6"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
@@ -111,10 +114,10 @@
         android:layout_marginStart="290dp"
         android:layout_marginLeft="273dp"
         android:layout_marginTop="280dp"
-        android:src="@drawable/flamingo" />
+        android:src="@drawable/forest" />
 
     <ImageView
-        android:id="@+id/animal7"
+        android:id="@+id/plant7"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
@@ -123,10 +126,10 @@
         android:layout_marginStart="30dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="470dp"
-        android:src="@drawable/giraffe" />
+        android:src="@drawable/flower4" />
 
     <ImageView
-        android:id="@+id/animal8"
+        android:id="@+id/plant8"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
@@ -135,12 +138,10 @@
         android:layout_marginStart="160dp"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="470dp"
-        android:src="@drawable/squirrel" />
-
-
+        android:src="@drawable/tree" />
 
     <ImageView
-        android:id="@+id/animal9"
+        android:id="@+id/plant9"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
@@ -149,7 +150,7 @@
         android:layout_marginStart="290dp"
         android:layout_marginLeft="286dp"
         android:layout_marginTop="470dp"
-        android:src="@drawable/hen" />
+        android:src="@drawable/forest1" />
 
     <TextView
         android:id="@+id/textView10"
@@ -161,7 +162,7 @@
         android:layout_marginStart="53dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="210dp"
-        android:text="0:45"
+        android:text="0:30"
         android:textColor="#000000"
         android:textSize="20dp" />
 
@@ -189,7 +190,7 @@
         android:layout_marginStart="320dp"
         android:layout_marginLeft="305dp"
         android:layout_marginTop="210dp"
-        android:text="0:30"
+        android:text="1:00"
         android:textColor="#000000"
         android:textSize="20dp" />
 
@@ -203,7 +204,7 @@
         android:layout_marginStart="63dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="395dp"
-        android:text="0:50"
+        android:text="0:40"
         android:textColor="#000000"
         android:textSize="20dp" />
 
@@ -217,7 +218,7 @@
         android:layout_marginStart="193dp"
         android:layout_marginLeft="178dp"
         android:layout_marginTop="395dp"
-        android:text="0:45"
+        android:text="0:30"
         android:textColor="#000000"
         android:textSize="20dp" />
 
@@ -231,7 +232,7 @@
         android:layout_marginStart="325dp"
         android:layout_marginLeft="305dp"
         android:layout_marginTop="395dp"
-        android:text="1:00"
+        android:text="1:10"
         android:textColor="#000000"
         android:textSize="20dp" />
 
@@ -245,7 +246,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="585dp"
-        android:text="0:55"
+        android:text="0:35"
         android:textColor="#000000"
         android:textSize="20dp" />
 
@@ -273,7 +274,7 @@
         android:layout_marginStart="325dp"
         android:layout_marginLeft="300dp"
         android:layout_marginTop="585dp"
-        android:text="0:20"
+        android:text="1:20"
         android:textColor="#000000"
         android:textSize="20dp" />
 
